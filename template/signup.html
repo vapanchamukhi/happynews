@@ -1,0 +1,31 @@
+
+    <div class="modal-header">
+            <h3 class="modal-title">Register Urself Friend!!</h3>
+            <a ng-href="" class="menu" ng-click="openLoginModel()">Login to Existing Account</a>
+        </div>
+<form name="userForm" novalidate>
+    <div class="modal-body model-form">
+
+        <div class="row">
+                <input type="text" id="name" name="firstName" ng-model="firstName" placeholder="First Name" required />
+
+                <input type="text" id="lname" ng-model="lastName" placeholder="Last Name" />
+            <div ng-messages="userForm.firstName.$error" ng-if="userForm.firstName.$touched">
+                <p ng-message="required" class="validationError">Your First Name is required.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="email" id="email" ng-model="email" placeholder="Email Address" class="bigger-control" required />
+        </div>
+
+        <div class="row">
+                <input type="password" id="password" ng-model="password" placeholder="Password" required />
+                <input type="password" id="password1" ng-model="password1" placeholder="Re-Enter Password" required />
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary login-button" type="button" ng-click="ok()">OK</button>
+        <button class="btn btn-primary login-button" type="button" ng-click="cancel()">Cancel</button>
+    </div>
+</form>
