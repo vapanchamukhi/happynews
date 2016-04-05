@@ -123,12 +123,24 @@ img {
     display: table-row;
 }
 
-.row input{
+.table-cell{
     display: table-cell;
     margin-right: 27px;
     width: 45%;
-    border-radius: 4px;
+
     margin-top: 5px;
+}
+.table-cell-lg{
+    display: table-cell;
+    margin-right: 27px;
+    width: 95%;
+
+    margin-top: 5px;
+}
+
+.form-input{
+    border-radius: 4px;
+    width: 95%;
 }
 
 .bigger-control{
